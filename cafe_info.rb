@@ -7,7 +7,7 @@ class cafe
     # We have initialized the hotel with all this data - so that the data is in one location if it needs to be modified.
     # If in the future we were to expand to different locations, we could create Hotel subclasses, and hard-code the information in there. 
     def initialize
-        @name = "Core"
+        @name = "Core 🌳"
         @address = "7 Blaise rd, Brisbane QLD 4000"
         @phone = "1800 123"
         @email = "woo_core@bestin.com"

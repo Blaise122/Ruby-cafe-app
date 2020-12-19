@@ -55,3 +55,28 @@ describe Order do
     end
 end
 
+describe Cafe do
+    it 'should create a cafe with a name' do
+        name = "Core 🌳"
+        menu_items = {}
+        cafe = Cafe.new(name,menu_items)
+        expect(cafe.name).to eq(name)
+    end
+    it 'should create a cafe with a menu' do
+        name = "Core 🌳"
+        menu_items = {latte: 6.20, tea: 5.00}
+        cafe = Cafe.new(name, menu_items)
+        expect(cafe.menu.get_items.length).to be(2)
+    end
+    it 'should add an item to order' do
+        name = "Core 🌳"
+        menu_items = {latte: 6.20, tea: 5.00}
+        cafe = Cafe.new(name, menu_items)
+        item = "latte"
+        quantity = 1
+        cafe.add_to_order(item, quantity)
+        expect(cafe.get_order().get_items().length).to be(2)
+
+    end
+    
+end
