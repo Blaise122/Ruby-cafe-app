@@ -11,7 +11,7 @@ class Menu
     end
 
     def get_price(name)
-        item = @menu_items:find {|menu_item| menu_item.name = name}
+        item = @menu_items.find {|menu_item| menu_item.name = name}
         return item.price
     end
     def get_items

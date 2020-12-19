@@ -75,8 +75,13 @@ describe Cafe do
         item = "latte"
         quantity = 1
         cafe.add_to_order(item, quantity)
-        expect(cafe.get_order().get_items().length).to be(2)
-
+        expect(cafe.get_order().get_items().length).to be(1)
+    end
+    it 'should define a print_menu method' do
+        name = "Core 🌳"
+        menu_items = {latte: 6.20, tea: 5.00}
+        cafe = Cafe.new(name, menu_items)
+        expect(cafe.print_menu).to eq(nil)
     end
     
 end

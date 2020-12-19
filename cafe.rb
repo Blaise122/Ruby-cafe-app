@@ -23,4 +23,13 @@ class Cafe
     def get_order
         return @order
     end
+
+    def print_menu
+        @menu.display
+    end
 end
+
+name = "Core 🌳"
+menu_items = {latte: 6.20, tea: 5.00}
+cafe = Cafe.new(name, menu_items)
+cafe.print_menu
