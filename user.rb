@@ -5,7 +5,7 @@ class User
 
     def initialize(name)
         @name = name
-        @booking = nil  # order is initialized as nil so that we can use the information in our main application loop, such as 
+        @ordering = nil  # order is initialized as nil so that we can use the information in our main application loop, such as 
                         # a customized message upon exit. 
                         # Once a order has been created, the booking object is added to this instance variable.
     end
