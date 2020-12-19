@@ -6,13 +6,12 @@ class Cafe
         @name = name
         @menu = Menu.new
         populate_menu(menu_items)
-        @order = order.new
+        @order = Order.new
     end
 
     def populate_menu(menu_items)
         menu_items.each do |name, price|
             @menu.add_item(name,price)
-        
         end
     end
 
@@ -29,7 +28,3 @@ class Cafe
     end
 end
 
-name = "Core 🌳"
-menu_items = {latte: 6.20, tea: 5.00}
-cafe = Cafe.new(name, menu_items)
-cafe.print_menu

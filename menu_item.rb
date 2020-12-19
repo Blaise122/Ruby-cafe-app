@@ -1,13 +1,15 @@
+require_relative './menu'
+
 class MenuItem
     attr_reader :price, :name
 
     def initialize(name, price)
         @name = name
-        @price = name
+        @price = price
     end
 
-    def to.s
-        return "#{@name}" +" "*(10 - @name.length)+" ...#{@price}"
+    def to_s
+        return "#{@name}" +" "*(10 - @name.length)+" ... #{@price}"
     end
     
 end

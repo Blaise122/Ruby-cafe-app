@@ -1,5 +1,5 @@
-require_relative 'User'
-require_relative '../methods/headers'
+require_relative './user'
+require_relative './headers'
 
 class Order
     def initialize
