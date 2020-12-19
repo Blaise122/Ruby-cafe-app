@@ -1,6 +1,6 @@
 # This is the main user class. It will hold the user's details and their orders. In future enhancements we would be able 
 # to hold additional information such as contact details. 
-class Cat
+class User
     attr_accessor :ordering, :name
 
     def initialize(name)

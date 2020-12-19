@@ -1,5 +1,5 @@
 require 'tty-prompt'
-require_relative '../methods/headers'
+require_relative 'headers'
 
 class cafe
     attr_reader :name

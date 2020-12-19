@@ -19,10 +19,9 @@ class Menu
     end
 
     def display
-        puts "Menu"
+        puts 
+        view_menu_header
+        @menu_items.each {|item| puts item}
     end
-
-
-
 end
 

@@ -3,7 +3,7 @@
 require 'tty-prompt'
 
 # Line for the headers
-HEADER_LINE = "--------------------------------------------------------------"
+HEADER_LINE = "-----------------------------------------------------------"
 HEADER_LENGTH = HEADER_LINE.length
 
 # clears the screen

@@ -1,3 +1,6 @@
+require_relative 'User'
+require_relative '../methods/headers'
+
 class Order
     def initialize
         @order_items = Hash.new(0)
