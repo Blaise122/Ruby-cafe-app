@@ -1,7 +1,7 @@
 require 'tty-prompt'
 require_relative 'headers'
 
-class cafe
+class Cafe
     attr_reader :name
 
     # We have initialized the hotel with all this data - so that the data is in one location if it needs to be modified.
@@ -40,7 +40,7 @@ class cafe
         puts " Email: #{@email}"
     end
 
-    Trading hours information is also seperated from cafe information so that we can use this contact information in different locations if we need it
+    # Trading hours information is also seperated from cafe information so that we can use this contact information in different locations if we need it
     def trading_info
         puts "MON - FRI: #{@mon_fri}"
         puts "SAT: #{@sat}"

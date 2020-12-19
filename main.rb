@@ -10,7 +10,7 @@ require_relative 'headers'
 
 # Welcome message
 clear
-welcome(Core)
+welcome
 
 # Enter Cat guest details
 puts "\n    Hello There! \n\n"
@@ -41,5 +41,17 @@ while user_name_count < 3
 end
 
 # Creates a new user object, and reaffirms to the user their input with a greeting. 
-user = User.new(cat_name)
+user = User.new(user_name)
 puts "\n\n You Are Awesome #{user.name}!"
+
+# Main Application Loop 
+while true
+    
+    # Display cafe menu options using TTY-Prompt gem
+    welcome
+    selection = TTY::Prompt.new.select("How may we assist you today? Please select from the following options:",  cycle: true, marker: '>', echo: false) do |menu|
+        menu.choice('Show Menu', 1)
+        menu.choice('View Order', 2)
+        menu.choice('View Cafe Information', 3)
+        menu.choice('Provide Feedback', 4)
+        menu.choice('Exit', 5)

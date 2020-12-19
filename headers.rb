@@ -37,11 +37,11 @@ def loading_screen(string)
 end
 
 # Welcome to Core
-def welcome(core)
+def welcome
     puts
     puts HEADER_LINE
     puts "WELCOME TO ".center(HEADER_LENGTH)
-    puts "#{core.name}".center(HEADER_LENGTH)
+    puts "Core 🌳".center(HEADER_LENGTH)
     puts HEADER_LINE
     puts
 end
