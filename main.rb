@@ -3,6 +3,7 @@ require_relative 'cafe_info'
 require_relative 'menu_item'
 require_relative 'menu'
 require_relative 'user'
+require_relative 'cafe'
 require_relative 'order'
 require_relative 'feedback'
 require_relative 'headers'
@@ -51,7 +52,52 @@ while true
     welcome
     selection = TTY::Prompt.new.select("How may we assist you today? Please select from the following options:",  cycle: true, marker: '>', echo: false) do |menu|
         menu.choice('Show Menu', 1)
-        menu.choice('View Order', 2)
-        menu.choice('View Cafe Information', 3)
-        menu.choice('Provide Feedback', 4)
-        menu.choice('Exit', 5)
+        menu.choice('View Cafe Information', 2)
+        menu.choice('Provide Feedback', 3)
+        menu.choice('Exit', 4)
+
+        case selection
+
+        # 1. Make a new booking
+        when 1    
+            # create an instance of cafe
+            menu = {"Latte" => 6.20, "Tea" => 5.00, "Espresso" => 5.00, "Cappuccino" => 5.00, "Flat White" => 5.00, "Hot Chocolate" => 4.20, "Iced Mocha" => 4.00, "Iced Latte" => 4.00, "Iced Chocolate" => 4.00, "Bananna Bread" => 3.60, "Belgian Waffles" => 7.00, "Chessy Garlic Bread" => 4.20, "Calamari Rings" => 4.20,"Beef Burger" => 9.20,"B.L.T & Egg Sandwich" => 5.20}
+            cafe = Cafe.new(menu)
+
+            welcome
+
+            loop do
+                cafe.print_menu
+                puts
+                puts "what would you like to order?\n When you are finished, type 'done'."
+                input = gets.strip.downcase
+
+                # if 'done', break loop
+                if (input == 'done')
+                    break
+                end
+
+                # check for valid menu item
+                item = cafe.menu.validate_item(input)
+                if (item)
+                    puts "How many would you like?"
+                    quantity = gets.to_i
+                    if (quantity > 0)
+                        cafe.add_to_order(item, quantity)
+                    end
+                end
+            end
+            # print the order 
+            cafe.print_order
+            back_main_menu
+        end
+
+        # View about the hotel and contact information
+        when 2
+
+            clear
+            hotel.hotel_info
+            back_main_menu
+
+
+
