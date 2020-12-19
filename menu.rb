@@ -18,5 +18,11 @@ class Menu
         return @menu_items
     end
 
+    def display
+        puts "Menu"
+    end
+
+
+
 end
 
