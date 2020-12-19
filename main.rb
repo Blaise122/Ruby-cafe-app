@@ -90,14 +90,29 @@ while true
             # print the order 
             cafe.print_order
             back_main_menu
-        end
+        
 
         # View about the hotel and contact information
         when 2
 
             clear
-            hotel.hotel_info
+            Cafee.cafe_info
             back_main_menu
 
+        # providng feedback
+        when 3
+
+
+
+        # Exit
+        when 4
+            clear
+            puts "Thank you #{user_name}"
+            puts "We hope you will visit us soon!"
+            puts "Have a perfect day"
+            return
+        end
+    end
+end
 
 

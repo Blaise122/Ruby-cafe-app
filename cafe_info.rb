@@ -1,7 +1,7 @@
 require 'tty-prompt'
 require_relative 'headers'
 
-class Cafe
+class Cafee
     attr_reader :name
 
     # We have initialized the hotel with all this data - so that the data is in one location if it needs to be modified.
@@ -18,7 +18,7 @@ class Cafe
     end
 
     # Displays the contact information for Core
-    def c_info
+    def cafe_info
         puts HEADER_LINE
         puts "#{@name.upcase}".center(HEADER_LENGTH)
         puts HEADER_LINE

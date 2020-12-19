@@ -1,51 +1,47 @@
-# require 'tty-prompt'
+require 'tty-prompt'
 
-# class Quiz
-#     attr_accessor :prompt, :answer
-#     def initialize(prompt, answer)
-#         @prompt = prompt
-#         @answer = answer
-#     end
-# end
+class Question
+    attr_accessor :prompt, :answer
+    def initialize(prompt, answer)
+        @prompt = prompt
+        @answer = answer
+    end
+end
 
-# p1 = 
-# p2 =
-# p3 =
-# p4 =
-# p5 = 
-# p6 =
-# p7 =
-# p8 =
-# p9 =
+p1 = "How likely is it that you would come back?\n(a)Very Likely\n(b)Likely\n(c)Unlikely\n(d)Very Unlikely"
+p2 = "How Often Do You Dine with Us?\n(a) First-time customer\n(b)Infrequent diner\n(c)frequent client"
+p3 = "Did your food arrive within 30 minutes of placing your order?\n(a)Yes\n(b)No"
+p4 = "How did you feel about the speed of service?\n(a)Excellent\n(b)Good\n(c)Average\n(d)Dissatisfied"
+p5 = "How would you rate the overall experience?\n(a) Excellent\n(b)Good\n(c)Average\n(d)Dissatisfied"
+p6 = "What types of coffees do you typicall order at the cafe?\n(a)Latte\n(b)Espresso\n(c)Cappuccino\n(d)Flat White"
+p7 = "in addition to coffee, what food would you prefer to order?\n(a)Muffins\n(b)Panini/Sandwich\n(c)Doughnuts\n(d)Cake/Cookies"
 
 
-# questions = [
-#     question.new(p1, )
-#     question.new(p2, )
-#     question.new(p3, )
-#     question.new(p4, )
-#     question.new(p5, )
-#     question.new(p6, )
-#     question.new(p7, )
-#     question.new(p8, )
-#     question.new(p9, )
-# ]
+
+questions = [
+    Question.new(p1, "a", "b", "c", "d" ),
+    Question.new(p2, "a", "b", "c"),
+    Question.new(p3, "a", "b"),
+    Question.new(p4, "a", "b", "c", "d"),
+    Question.new(p5, "a", "b", "c", "d"),
+    Question.new(p6, "a", "b", "c", "d"),
+    Question.new(p7, "a", "b", "c", "d") 
+]
 
 
-# def run_test(questions)
-#     puts
-#     puts HEADER_LINE
-#     puts "Take a Quiz 🌳".center(HEADER_LENGTH)
-#     puts HEADER_LINE
-#     puts
-#     answer = ""
-#     score = 0
-#     for question in questions
-#         puts question.prompt
-#         answer = get.chomp()
-#         if answer == question.answer
-#             score += 1
-#         end
-#     end
-#     puts ("you got" + score + "/" + questions.length())
-# end
+def run_survey(questions)
+    puts
+    puts HEADER_LINE
+    puts "Take a Quiz 🌳".center(HEADER_LENGTH)
+    puts HEADER_LINE
+    puts
+    answer = ""
+
+    for question in questions
+        puts question.prompt
+        answer = get.chomp()
+        puts answer
+    end
+end
+
+run_survey(questions)
