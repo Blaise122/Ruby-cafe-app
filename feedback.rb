@@ -1,3 +1,4 @@
+require_relative './headers'
 require 'tty-prompt'
 
 class Question
@@ -19,29 +20,28 @@ p7 = "in addition to coffee, what food would you prefer to order?\n(a)Muffins\n(
 
 
 questions = [
-    Question.new(p1, "a", "b", "c", "d" ),
-    Question.new(p2, "a", "b", "c"),
-    Question.new(p3, "a", "b"),
-    Question.new(p4, "a", "b", "c", "d"),
-    Question.new(p5, "a", "b", "c", "d"),
-    Question.new(p6, "a", "b", "c", "d"),
-    Question.new(p7, "a", "b", "c", "d") 
+    Question.new(p1,["a", "b", "c", "d"]),
+    Question.new(p2,["a", "b", "c"]),
+    Question.new(p3,["a", "b"]),
+    Question.new(p4,["a", "b", "c", "d"]),
+    Question.new(p5,["a", "b", "c", "d"]),
+    Question.new(p6,["a", "b", "c", "d"]),
+    Question.new(p7,["a", "b", "c", "d"]) 
 ]
 
 
 def run_survey(questions)
     puts
-    puts HEADER_LINE
-    puts "Take a Quiz 🌳".center(HEADER_LENGTH)
-    puts HEADER_LINE
+    feedback_header
     puts
     answer = ""
 
     for question in questions
         puts question.prompt
-        answer = get.chomp()
+        answer = gets.chomp()
         puts answer
     end
+    puts " Thank you for your feedback"
 end
 
 run_survey(questions)
