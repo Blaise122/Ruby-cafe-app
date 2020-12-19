@@ -83,5 +83,17 @@ describe Cafe do
         cafe = Cafe.new(name, menu_items)
         expect(cafe.print_menu).to eq(nil)
     end
+    it 'should calculate order total' do
+        name = "Core 🌳"
+        menu_items = {"latte" => 6.20, "tea" => 5.00}
+        cafe = Cafe.new(name, menu_items)
+        item = "latte"
+        quantity = 1
+        cafe.add_to_order(item, quantity)
+        item = "latte"
+        quantity = 2
+        cafe.add_to_order(item,quantity)
+        expect(cafe.order_total).to be(18.60)
+    end
     
 end
