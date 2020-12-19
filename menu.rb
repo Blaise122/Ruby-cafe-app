@@ -22,6 +22,7 @@ class Menu
         puts 
         view_menu_header
         @menu_items.each {|item| puts item}
+        return nil
     end
 end
 
