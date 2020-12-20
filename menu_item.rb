@@ -1,5 +1,6 @@
 require_relative './menu'
 
+
 class MenuItem
     attr_reader :price, :name
 
@@ -10,6 +11,5 @@ class MenuItem
 
     def to_s
         return "#{@name}" +" "*(10 - @name.length)+" ... #{@price}"
-    end
-    
+    end 
 end
