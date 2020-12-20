@@ -43,6 +43,7 @@ class Cafe
         else
             puts "Core thanks you, see you next time!"
         end
+        puts
     end
 end
 

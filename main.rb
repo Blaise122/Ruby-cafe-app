@@ -81,7 +81,7 @@ while opt != "4"
                 end
 
                 # check for valid menu item
-                puts "DEBUG======: got input: #{input}"
+                # puts "DEBUG======: got input: #{input}"
                 item = cafe.menu.validate_item(input)
                 if (item)
                     puts "How many would you like?"
