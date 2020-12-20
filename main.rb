@@ -93,8 +93,7 @@ while opt != "4"
             end
             # print the order 
             cafe.print_order
-            back_main_menu
-        
+            
         # View about the hotel and contact information
         when "2"
             puts HEADER_LINE
