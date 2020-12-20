@@ -65,23 +65,23 @@ while opt != "4"
         # 1. Make a new booking
         when "1"    
             # create an instance of cafe
-            menu = {"Latte" => 6.20, "Tea" => 5.00, "Espresso" => 5.00, "Cappuccino" => 5.00, "Flat White" => 5.00, "Hot Chocolate" => 4.20, "Iced Mocha" => 4.00, "Iced Latte" => 4.00, "Iced Chocolate" => 4.00, "Bananna Bread" => 3.60, "Belgian Waffles" => 7.00, "Chessy Garlic Bread" => 4.20, "Calamari Rings" => 4.20,"Beef Burger" => 9.20,"B.L.T & Egg Sandwich" => 5.20}
-            cafe = Cafe.new(menu)
+            menu = {"latte" => 6.20, "tea" => 5.00, "espresso" => 5.00, "cappuccino" => 5.00, "flat white" => 5.00}
+            cafe = Cafe.new("Core 🌳",menu)
 
             welcome
-
             loop do
                 cafe.print_menu
                 puts
-                puts "what would you like to order?\n When you are finished, type 'done'."
+                puts "what would you like to order?\nWhen you are finished, type 'done'."
                 input = gets.strip.downcase
 
                 # if 'done', break loop
-                if (input == 'done')
+                if (input === 'done')
                     break
                 end
 
                 # check for valid menu item
+                puts "DEBUG======: got input: #{input}"
                 item = cafe.menu.validate_item(input)
                 if (item)
                     puts "How many would you like?"
@@ -95,7 +95,6 @@ while opt != "4"
             cafe.print_order
             back_main_menu
         
-
         # View about the hotel and contact information
         when "2"
             puts HEADER_LINE
