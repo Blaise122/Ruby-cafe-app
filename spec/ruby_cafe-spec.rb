@@ -34,7 +34,7 @@ describe Menu do
         menu.add_item(name, price)
         expect(menu.get_items().length).to be(1)
     end
-    it 'should item name for valid item' do
+    it 'should return item name for valid item' do
         name  = "tea"
         price = 5.00
         menu = Menu.new
