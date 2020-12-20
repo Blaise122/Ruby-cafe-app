@@ -106,7 +106,7 @@ describe Cafe do
         cafe.add_to_order(item, quantity)
         item = "latte"
         quantity = 2
-        cafe.add_to_order(item,quantity)
+        cafe.add_to_order(item, quantity)
         expect(cafe.order_total).to be(18.60)
     end
     
