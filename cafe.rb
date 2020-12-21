@@ -39,9 +39,9 @@ class Cafe
     def print_order
         if @order
            @order.display
-           puts "Total:   $%.2f" % order_total
+           puts "Total:  $%.2f" % order_total
         else
-            puts "Core thanks you, here is your order:"
+            puts "Core thanks you, see you next time"
         end
         puts
     end

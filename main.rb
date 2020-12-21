@@ -78,7 +78,7 @@ while opt != "4"
                 end
 
                 # check for valid menu item
-                puts "DEBUG======: got input: #{input}"
+                # puts "DEBUG======: got input: #{input}"
                 item = cafe.menu.validate_item(input)
                 if (item)
                     puts "How many would you like?"
@@ -87,10 +87,11 @@ while opt != "4"
                         cafe.add_to_order(item, quantity)
                     end
                 end
+                # # print the order 
+                # cafe.print_order
             end
             # print the order 
             cafe.print_order
-            
         # View about the hotel and contact information
         when "2"
             puts HEADER_LINE
@@ -139,6 +140,7 @@ while opt != "4"
         else
         puts "Invalid option"
     end
+    puts
     puts "press Enterkey to continue...."
     gets
     system "clear"
