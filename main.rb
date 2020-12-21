@@ -1,21 +1,17 @@
 require 'tty-prompt'
-# require_relative './cafe_info'
 require_relative './menu'
 require_relative './user'
 require_relative './cafe'
 require_relative './order'
-# require_relative './feedback'
 require_relative './headers'
 
-# Create a hotel and rooms
-# cafeinfo = CafeInfo.new.add_item(User.new)
 
 # Welcome message
 clear
 welcome
 
 # Enter Cat guest details
-puts "\n    Hello There! \n\n"
+puts "\n   Hello There! \n\n"
 puts "Please enter your name: \n\n"
 
 # Creating a loop to make sure the user types in something. This exits out of the loop if the user does not type anything in after 3 tries. 
@@ -66,7 +62,7 @@ while opt != "4"
         when "1"    
             # create an instance of cafe
             menu = {"latte" => 6.20, "tea" => 5.00, "espresso" => 5.00, "cappuccino" => 5.00, "flat white" => 5.00}
-            cafe = Cafe.new("Core 🌳",menu)
+            cafe = Cafe.new("Core 🌳", menu)
 
             welcome
             loop do
@@ -81,7 +77,7 @@ while opt != "4"
                 end
 
                 # check for valid menu item
-                # puts "DEBUG======: got input: #{input}"
+                puts "DEBUG======: got input: #{input}"
                 item = cafe.menu.validate_item(input)
                 if (item)
                     puts "How many would you like?"

@@ -41,7 +41,7 @@ class Cafe
            @order.display
            puts "Total:   $%.2f" % order_total
         else
-            puts "Core thanks you, see you next time!"
+            puts "Core thanks you, here is your order:"
         end
         puts
     end

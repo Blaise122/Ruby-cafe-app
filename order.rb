@@ -1,4 +1,4 @@
-require_relative './user'
+# require_relative './user'
 require_relative './headers'
 
 class Order
@@ -13,5 +13,4 @@ class Order
     def get_items
         return @order_items
     end
-
 end

@@ -51,7 +51,7 @@ def view_menu_header
     clear
     puts
     puts HEADER_LINE
-    puts "Menu".upcase.center(HEADER_LENGTH)
+    puts "Menu 🌳".upcase.center(HEADER_LENGTH)
     puts HEADER_LINE
     puts
 end

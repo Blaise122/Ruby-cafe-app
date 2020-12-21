@@ -1,7 +1,7 @@
 require_relative '../menu_item'
 require_relative '../menu'
 require_relative '../order'
-require_relative '../main'
+require_relative '../cafe'
 
 describe MenuItem do
     it 'should return the price of an item' do
@@ -10,7 +10,7 @@ describe MenuItem do
         menu_item = MenuItem.new(name,price)
         expect(menu_item.price).to eq(price)
     end
-    it 'should return the price of an item' do
+    it 'should return name of an item' do
         name  = "tea"
         price = 5.00
         menu_item = MenuItem.new(name,price)
