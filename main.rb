@@ -87,9 +87,8 @@ while opt != "4"
                         cafe.add_to_order(item, quantity)
                     end
                 end
-                # # print the order 
-                # cafe.print_order
             end
+            
             # print the order 
             cafe.print_order
         # View about the hotel and contact information
@@ -141,7 +140,7 @@ while opt != "4"
         puts "Invalid option"
     end
     puts
-    puts "press Enterkey to continue...."
+    puts "press Enter key to continue...."
     gets
     system "clear"
 end
