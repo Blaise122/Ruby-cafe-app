@@ -92,6 +92,7 @@ while opt != "4"
             
         # View about the hotel and contact information
         when "2"
+            
             puts HEADER_LINE
             puts " Cafe Information 🌳".center(HEADER_LENGTH)
             puts HEADER_LINE
@@ -108,13 +109,12 @@ while opt != "4"
 
         # providng feedback
         when "3"
-
-            clear
+            
             puts HEADER_LINE
             puts "Feedback 🌳".upcase.center(HEADER_LENGTH)
             puts HEADER_LINE
             puts
-            puts "please with the options provided 🙏🏾"
+            puts "Please Answer With The Options Provided 🙏🏾"
             puts
             puts "How likely is it that you would come back?\n(a)Very Likely\n(b)Likely\n(c)Unlikely\n(d)Very Unlikely"
             answer_1 = gets.chomp
@@ -133,10 +133,10 @@ while opt != "4"
             puts "Thank you for your Feedback #{user_name}"
         # Exit
         when "4"
-            clear
+            
             puts "Thank you #{user_name}"
             puts "We hope you will visit us soon!"
-            puts "Have a Great day"
+            puts "Have a Great day!"
         else
         puts "Invalid option"
     end
