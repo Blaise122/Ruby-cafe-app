@@ -42,7 +42,7 @@ end
 user = User.new(user_name)
 puts "\n\n Welcome #{user.name}!"
 
-opt = "1"
+opt = " "
 # Main Application Loop 
 while opt != "4"
     welcome
@@ -54,8 +54,9 @@ while opt != "4"
     puts "2. View Cafe Information"
     puts "3. Provide Feedback"
     puts "4. Exit"
-    print "Please select from options (1-4)"
+    print "Please select from options (1-4): "
     opt = gets.chomp
+    system "clear"
 
     case opt
         # 1. Make a new booking
@@ -92,7 +93,6 @@ while opt != "4"
             
         # View about the hotel and contact information
         when "2"
-            
             puts HEADER_LINE
             puts " Cafe Information 🌳".center(HEADER_LENGTH)
             puts HEADER_LINE
@@ -109,7 +109,6 @@ while opt != "4"
 
         # providng feedback
         when "3"
-            
             puts HEADER_LINE
             puts "Feedback 🌳".upcase.center(HEADER_LENGTH)
             puts HEADER_LINE
@@ -140,9 +139,9 @@ while opt != "4"
         else
         puts "Invalid option"
     end
-    # puts "Please Enter key to continue.."
-    # gets
-    # clear
+    puts "press Enterkey to continue...."
+    gets
+    system "clear"
 end
 
 
