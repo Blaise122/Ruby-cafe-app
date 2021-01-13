@@ -1,0 +1,233 @@
+commit e83f254fe3f03bd8946ae23032fddfb8f5d46041
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Wed Jan 13 17:13:05 2021 +1000
+
+    made some changes to the game
+
+commit cc0c8532e9c7717a7145ce13565ace03f72dcba8
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Wed Jan 13 17:10:52 2021 +1000
+
+    made some changes to the game
+
+commit e44023de7a65827e6598818856a1c61c637c644d
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Wed Jan 13 17:00:17 2021 +1000
+
+    added game for customers to play while waiting their order
+
+commit e31eb4c49ecd2efc31c8555b50a8b553c63c5530
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Wed Jan 13 15:31:11 2021 +1000
+
+    made some changes to main.rb
+
+commit fc0b6fbb99aeb4f4f9b980a22bd56013327ff78c
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Wed Jan 13 14:43:48 2021 +1000
+
+    added hotel information to main.rb
+
+commit 8585832746465a6160f11dd458e303ad10a0aa6c
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Mon Dec 21 20:55:47 2020 +1000
+
+    added git log
+
+commit 4e5bbb271b7a766297e8915beaf627a4f89a5736
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Mon Dec 21 20:40:37 2020 +1000
+
+    added files, made final changes to main.rb
+
+commit 20152e94031a0d7969b35b6b20a2e26d767d2aae
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Mon Dec 21 15:54:53 2020 +1000
+
+    correcting some minor errors
+
+commit 68a26441e80db6be181c501174d3143fe82e5960
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Mon Dec 21 15:39:05 2020 +1000
+
+    correcting some minor errors
+
+commit 894ab1084bc58efa434e74927921db0546f12457
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Mon Dec 21 15:19:39 2020 +1000
+
+    correcting some minor errors
+
+commit 3989e42cf2435c2c7a7356c9bbcd2f77bac44c77
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Mon Dec 21 14:49:01 2020 +1000
+
+    correcting some minor errors
+
+commit f649d981eaed77aa5e1d37dbcd8c862cfdf8cd83
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Mon Dec 21 14:37:24 2020 +1000
+
+    correcting some minor errors
+
+commit 20cfe232141e0caaa21ede4eedf12303342ba70c
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sun Dec 20 14:35:45 2020 +1000
+
+    correcting some minor errors
+
+commit b70ae48c75f0a748f352c06705f6a80d8a862448
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sun Dec 20 14:29:19 2020 +1000
+
+    correcting some minor errors
+
+commit 485cec0731337ced43f078e54329a3d6c7000b28
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sun Dec 20 14:25:46 2020 +1000
+
+    correcting some minor errors
+
+commit f35dc80b9421369d36ee67dd485138be508b12f2
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sun Dec 20 13:49:39 2020 +1000
+
+    correcting some minor errors
+
+commit a30917abc5cb61cbda4290a832d4ab18c1ff7768
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sun Dec 20 13:37:27 2020 +1000
+
+    ---
+
+commit 0996f348a1312c9d7b11900d558a4553da5c7282
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sun Dec 20 13:28:06 2020 +1000
+
+    minor change
+
+commit 0a572d1ae90eb6127d7f4e7693257adebb15d56a
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sun Dec 20 13:22:42 2020 +1000
+
+    made sveral changes to multiple classes
+
+commit 95cca1706dc75aea23abde1918e5ba34442ba308
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sun Dec 20 11:23:14 2020 +1000
+
+    made several changes across classes
+
+commit 5c1c391c280172b53e54efc6ea59283ab5e6fcae
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sun Dec 20 07:38:32 2020 +1000
+
+    added feedback class and method
+
+commit f8c063eb074cdb6480ebf46b3645838279681d17
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sun Dec 20 06:59:41 2020 +1000
+
+    moved .rspec in spec file
+
+commit 11943d8a2fa203588dab0bbdf32b78afd69ed10f
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sun Dec 20 04:39:45 2020 +1000
+
+    created coding for show menu in main.rb
+
+commit 425d868480a8418f4b273ea5675e188f35f797f3
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sun Dec 20 02:44:21 2020 +1000
+
+    made some corrections
+
+commit a2085703da1789693a372af39378c52d65f07318
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sun Dec 20 00:56:21 2020 +1000
+
+    created welcome message,prompt user input and comfirmed input with greeting in main.rb
+
+commit fd994c8f5b327f493981d86e999adf70d745de55
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sun Dec 20 00:25:52 2020 +1000
+
+    added method to for calculating order and printing it as well as a test
+
+commit 7d3edff3b6ad37c4215f3c12348b8da420381b97
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sat Dec 19 23:43:12 2020 +1000
+
+    corrected some errors
+
+commit 090f5f6bf83d18910ebcf174ec0527cae9cc0cbb
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sat Dec 19 22:36:46 2020 +1000
+
+    made some changes
+
+commit f6fb9022c675bbf6001058e6de3d8b752f04b7da
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sat Dec 19 22:00:25 2020 +1000
+
+    added order test and def methods
+
+commit 39e27485782f3c36c45d99066f037d7f4f68eb84
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sat Dec 19 21:01:30 2020 +1000
+
+    created cafe.rb
+
+commit 96319009dbe62b71fe8cc16b9d3c587d695f679e
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sat Dec 19 18:39:47 2020 +1000
+
+    included method to display menu
+
+commit b2e8830c00dffb490c13a98407d80a1271be6dd6
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sat Dec 19 18:09:59 2020 +1000
+
+    made several changes
+
+commit 6d922ade439e0584be84ff6679e154bb6d96a89c
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sat Dec 19 17:33:35 2020 +1000
+
+    def user's method
+
+commit e1542941f16e64b15128fb23de8995f3b7cd3712
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sat Dec 19 17:24:37 2020 +1000
+
+    added cafe info
+
+commit ad5a3e109502dd04af71d109647272e480a9ec45
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sat Dec 19 16:41:53 2020 +1000
+
+    provided methods foe header of classes
+
+commit 170596ba0a8bc57642bfbfb316a3c2349e221173
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sat Dec 19 15:46:50 2020 +1000
+
+    renamed cafe class to cafe_info
+
+commit e14737986389f1aa081629afbe3c26397467c934
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sat Dec 19 15:42:35 2020 +1000
+
+    installed gem tty-prompt
+
+commit ecb6e91c54983d51f09dba65d01c1aefdf20fe95
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sat Dec 19 15:30:37 2020 +1000
+
+    added header class
+
+commit 847bd1ffece867ec29a76aba86b58d8045cce3c5
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sat Dec 19 15:09:44 2020 +1000
+
+    initial commit
