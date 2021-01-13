@@ -92,7 +92,22 @@ while opt != "4"
             # print the order 
             cafe.print_order
         # View about the hotel and contact information
-
+        when 2
+            puts HEADER_LINE
+            puts "Hotel Info 🌳".upcase.center(HEADER_LENGTH)
+            puts HEADER_LINE
+            puts
+            puts "Address: Laneway Basement, 181 George St, Brisbane City QLD 4000"
+            puts "Phone No: 0456 183 458"
+            puts "Email: core.brizzy@gmail.com"
+            puts
+            puts HEADER_LINE
+            puts
+            puts "Tucked away in one of Brisbane’s ever evolving alleyways, is Core – an underground, laneway specialty coffee house + bar.\nOur ‘Melbournesque’ venue is eclectic, warm (v cool in the Brissy summer though!) and inviting.\nThe coffee & beer is boutique and artisan – using amazing beans brewed by trained baristas and local craft beers, Core offers no attitude, no complex coffee lexicon, just great coffee brewed with skill, love and a friendly smile."
+            puts
+            puts "A surprisingly quiet setting (except on Friday evenings!!) just a few metres off busy George St, Core is the perfect place to escape for a coffee, craft beer, unique small batch wine or a sexy cocktail.\nWe offer lunch and dinner and have free wifi too. Come on down to get some much needed time to chill and escape, get some work done, meet up with friends or just relax and enjoy the great coffee, craft beverages, a selection of snacks and board games."
+            puts
+            puts HEADER_LINE
         # providng feedback
         when "3"
             puts HEADER_LINE
