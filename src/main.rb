@@ -92,7 +92,7 @@ while opt != "4"
             # print the order 
             cafe.print_order
         # View about the hotel and contact information
-        when 2
+        when "2"
             puts HEADER_LINE
             puts "Hotel Info 🌳".upcase.center(HEADER_LENGTH)
             puts HEADER_LINE
@@ -133,7 +133,6 @@ while opt != "4"
             puts "Thank you for your Feedback #{user_name}"
         # Exit
         when "4"
-            
             puts "Thank you #{user_name}"
             puts "We hope you will visit us soon!"
             puts "Have a Great day!"
