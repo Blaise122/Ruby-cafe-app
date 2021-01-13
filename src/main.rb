@@ -102,6 +102,8 @@ while opt != "5"
             puts "Phone No: 0456 183 458"
             puts "Email: core.brizzy@gmail.com"
             puts
+            puts "Mon-Fri: 9am-6pm"
+            puts "Sat-Sun: 10am-3pm"
             puts HEADER_LINE
             puts
             puts "Tucked away in one of Brisbane’s ever evolving alleyways, is Core – an underground, laneway specialty coffee house + bar.\nOur ‘Melbournesque’ venue is eclectic, warm (v cool in the Brissy summer though!) and inviting.\nThe coffee & beer is boutique and artisan – using amazing beans brewed by trained baristas and local craft beers, Core offers no attitude, no complex coffee lexicon, just great coffee brewed with skill, love and a friendly smile."
@@ -145,9 +147,9 @@ while opt != "5"
             puts "Core 🌳".upcase.center(HEADER_LENGTH)
             puts HEADER_LINE
             puts
-            puts "LOVE your coffee? While, how well do you know it.\nWhat is the healthiest choice from these options?\nYou get three attampts to guess correct."
-            puts "BULLETPROOF COFFEE\nALMOND MILK COFFEE\nCHAI LATTE\nLONG BLACK\nPICCOLO LATTE\nSOY LATTE\nMOCHA\n
-            FLAT WHITE\nCAPPUCCINO\nMACCHIATO\nLATTE"
+            puts "LOVE your coffee? While, how well do you know it. What is the healthiest choice from these options?\nYou get three attampts to guess correct."
+            puts
+            puts "BULLETPROOF COFFEE\nALMOND MILK COFFEE\nCHAI LATTE\nLONG BLACK\nPICCOLO LATTE\nSOY LATTE\nMOCHA\nFLAT WHITE\nCAPPUCCINO\nMACCHIATO\nLATTE".downcase
             puts
             while guess != right_answer and !out_of_guess
                 if guess_count < guess_limit
