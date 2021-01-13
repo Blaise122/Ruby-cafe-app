@@ -137,7 +137,7 @@ while opt != "5"
 
         # play a game while you wait for your order    
         when "4"
-            right_answer = "FLAT WHITE"
+            right_answer = "flate white"
             guess = ""
             guess_count = 0
             guess_limit = 3
