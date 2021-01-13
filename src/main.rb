@@ -44,7 +44,7 @@ puts "\n\n Welcome #{user.name}!"
 
 opt = " "
 # Main Application Loop 
-while opt != "4"
+while opt != "5"
     welcome
     # Creates a new user object, and reaffirms to the user their input with a greeting. 
     user = User.new(user_name)
@@ -53,8 +53,9 @@ while opt != "4"
     puts "1. Show Menu"
     puts "2. View Cafe Information"
     puts "3. Provide Feedback"
-    puts "4. Exit"
-    print "Please select from options (1-4): "
+    puts "4. Play a game while you wait"
+    puts "5. Exit"
+    print "Please select from options (1-5): "
     opt = gets.chomp
     system "clear"
 
@@ -131,8 +132,41 @@ while opt != "4"
             puts "In addition to coffee, what food would you prefer to order?\n(a)Muffins\n(b)Panini/Sandwich\n(c)Doughnuts\n(d)Cake/Cookies"
             answer_7 = gets.chomp
             puts "Thank you for your Feedback #{user_name}"
-        # Exit
+
+        # play a game while you wait for your order    
         when "4"
+            right_answer = "FLAT WHITE"
+            guess = ""
+            guess_count = 0
+            guess_limit = 3
+            out_of_guess = false
+
+            puts HEADER_LINE
+            puts "Core 🌳".upcase.center(HEADER_LENGTH)
+            puts HEADER_LINE
+            puts
+            puts "LOVE your coffee? While, how well do you know it.\nWhat is the healthiest choice from these options?\nYou get three attampts to guess correct."
+            puts "BULLETPROOF COFFEE\nALMOND MILK COFFEE\nCHAI LATTE\nLONG BLACK\nPICCOLO LATTE\nSOY LATTE\nMOCHA\n
+            FLAT WHITE\nCAPPUCCINO\nMACCHIATO\nLATTE"
+            puts
+            while guess != right_answer and !out_of_guess
+                if guess_count < guess_limit
+                    puts "Enter answer: "
+                    guess = gets.chomp()
+                    guess_count += 1
+                else
+                    out_of_guess = true
+                end
+            end
+
+            if out_of_guess
+                puts "Not you lucky day!"
+            else
+                puts "You are correct, congrats!!"
+            end
+
+        # Exit
+        when "5"
             puts "Thank you #{user_name}"
             puts "We hope you will visit us soon!"
             puts "Have a Great day!"
