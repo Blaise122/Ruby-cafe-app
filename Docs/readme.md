@@ -90,11 +90,11 @@ Includes user stories:
 
 - `main.rb` is the main document that controls the flow of the program.
 
-- `class/Cafe.rb` holds the Hotel class and represents the hotel. This class holds the information of the hotel, such as the address and phone number. It also holds a list of the rooms in the hotel. It is used for methods that show the rooms all together.
+- `class/Cafe.rb` holds the Cafe class and represents large portion of the functionality of the application. It brings togather the menu and order classes. 
 
-- `class/Menu.rb` holds the Room super class, as well as it's sub classes (which represents different types of rooms). This class deals with methods that pertain to a room, such as showing the availability of a room.
+- `class/Menu.rb` holds the Menu class, with the main aim of displaying menu, adding menu item and getting price. 
 
-- `class/Menu_item.rb` holds the Room super class, as well as it's sub classes (which represents different types of rooms). This class deals with methods that pertain to a room, such as showing the availability of a room.
+- `class/Menu_item.rb` holds the Menu_item class, with the main aim of displaying items and getting price. 
 
 - `class/User.rb` The cat class represents the customer, and holds the details of the customer as well as the order associated with the customer when it is created. The ordering is initialized with the user as "nil" - this is used during the main flow of the program, as different menus show different things depending on if there is an order or not.
 
