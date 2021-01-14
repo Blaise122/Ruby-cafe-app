@@ -69,10 +69,38 @@ Worked to create the basic structure of the educational app. Utilized a gem TTY-
 
 Struggled to make anymore progress with the educational app and decided to abort mission!
 
-#### Day 12 - 15
+#### Day 12 - 14
 
 Had to start from scratch, and been working on the cafe application.
 
+#### Trello
+
+Trello was used to organise, plane and break down what was needed to be done. We had user stories to drive what features we needed to implement. We used custom fields to estimate the sizing (how long a feature would take) as well as the priority of the feature (low, med and high priority).
+
+Below is Trello board on completion of the project.
+
+Day 14
+Includes user stories:
+![trello day 1](Trello1.png "Trello Day 14")
+
+![trello end day 1](Trello2.png "End Day 14 Trello")
+
+
+### Code Structure
+
+- `main.rb` is the main document that controls the flow of the program.
+
+- `class/Cafe.rb` holds the Hotel class and represents the hotel. This class holds the information of the hotel, such as the address and phone number. It also holds a list of the rooms in the hotel. It is used for methods that show the rooms all together.
+
+- `class/Menu.rb` holds the Room super class, as well as it's sub classes (which represents different types of rooms). This class deals with methods that pertain to a room, such as showing the availability of a room.
+
+- `class/Menu_item.rb` holds the Room super class, as well as it's sub classes (which represents different types of rooms). This class deals with methods that pertain to a room, such as showing the availability of a room.
+
+- `class/User.rb` The cat class represents the customer, and holds the details of the customer as well as the order associated with the customer when it is created. The ordering is initialized with the user as "nil" - this is used during the main flow of the program, as different menus show different things depending on if there is an order or not.
+
+- `class/Order.rb` is initialized once the user has selected an item on the menu. It represents the booking. The methods display the order and it also calculates the total price of the order.
+
+- `class/Headers.rb` is a file that holds some headers to make the main flow of the program look presentable.
 
 ### Accessibility
 
