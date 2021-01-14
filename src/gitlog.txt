@@ -1,3 +1,9 @@
+commit e48047d06f222b3ada0eb97d9cf283f9e28c23b5
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Wed Jan 13 19:46:04 2021 +1000
+
+    added trello images and code structure to readme file
+
 commit e83f254fe3f03bd8946ae23032fddfb8f5d46041
 Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
 Date:   Wed Jan 13 17:13:05 2021 +1000
