@@ -10,33 +10,38 @@ require_relative './headers'
 clear
 welcome
 
-# Enter Cat guest details
 puts "\n   Hello There! \n\n"
 puts "Please enter your name: \n\n"
 
 # Creating a loop to make sure the user types in something. This exits out of the loop if the user does not type anything in after 3 tries. 
  
-user_name_count = 0
-while user_name_count < 3
-    user_name = gets.chomp.capitalize
+# user_name_count = 0
+# while user_name_count < 3
+#     user_name = gets.chomp.capitalize
 
-    # exits the loop if the user types in a name
-    if user_name != "" 
-        clear
-        break
+#     # exits the loop if the user types in a name
+#     if user_name != "" 
+#         clear
+#         break
 
-    # continues the loop until the user types in a name, or until the user_name_count is greater than 3. 
+#     # continues the loop until the user types in a name, or until the user_name_count is greater than 3. 
+#     else
+#         user_name_count += 1
+#         if user_name_count == 3
+#             clear
+#             puts "\n\n 👀👀👀.."
+#             user_name = "coconut head 1"
+#         else
+#             puts "Ooops, please enter your name:"
+#         end
+#     end
+# end
+    if ARGV.length > 0 
+        user_name = ARGV[0]
     else
-        user_name_count += 1
-        if user_name_count == 3
-            clear
-            puts "\n\n 👀👀👀.."
-            user_name = "coconut head 1"
-        else
-            puts "Ooops, please enter your name:"
-        end
+        user_name = gets.chomp
     end
-end
+  
 
 # Creates a new user object, and reaffirms to the user their input with a greeting. 
 user = User.new(user_name)
@@ -56,7 +61,7 @@ while opt != "5"
     puts "4. Play a game while you wait"
     puts "5. Exit"
     print "Please select from options (1-5): "
-    opt = gets.chomp
+    opt = STDIN.gets.chomp
     system "clear"
 
     case opt
@@ -71,7 +76,7 @@ while opt != "5"
                 cafe.print_menu
                 puts
                 puts "what would you like to order?\nWhen you are finished, type 'done'."
-                input = gets.strip.downcase
+                input = STDIN.gets.strip.downcase
 
                 # if 'done', break loop
                 if (input === 'done')
@@ -83,7 +88,7 @@ while opt != "5"
                 item = cafe.menu.validate_item(input)
                 if (item)
                     puts "How many would you like?"
-                    quantity = gets.to_i
+                    quantity = STDIN.gets.to_i
                     if (quantity > 0)
                         cafe.add_to_order(item, quantity)
                     end
@@ -120,24 +125,24 @@ while opt != "5"
             puts "Please Answer With The Options Provided 🙏🏾"
             puts
             puts "How likely is it that you would come back?\n(a)Very Likely\n(b)Likely\n(c)Unlikely\n(d)Very Unlikely"
-            answer_1 = gets.chomp
+            answer_1 = STDIN.gets.chomp
             puts "How Often Do You Dine with Us?\n(a)First-time customer\n(b)Infrequent diner\n(c)frequent client"
-            answer_2 = gets.chomp
+            answer_2 = STDIN.gets.chomp
             puts "Did your food arrive within 30 minutes of placing your order?\n(a)Yes\n(b)No"
-            answer_3 = gets.chomp
+            answer_3 = STDIN.gets.chomp
             puts "How did you feel about the speed of service?\n(a)Excellent\n(b)Good\n(c)Average\n(d)Dissatisfied"
-            answer_4 = gets.chomp
+            answer_4 = STDIN.gets.chomp
             puts "How would you rate the overall experience?\n(a) Excellent\n(b)Good\n(c)Average\n(d)Dissatisfied"
-            answer_5 = gets.chomp
+            answer_5 = STDIN.gets.chomp
             puts "What types of coffees do you typicall order at the cafe?\n(a)Latte\n(b)Espresso\n(c)Cappuccino\n(d)Flat White"
-            answer_6 = gets.chomp
+            answer_6 = STDIN.gets.chomp
             puts "In addition to coffee, what food would you prefer to order?\n(a)Muffins\n(b)Panini/Sandwich\n(c)Doughnuts\n(d)Cake/Cookies"
-            answer_7 = gets.chomp
+            answer_7 = STDIN.gets.chomp
             puts "Thank you for your Feedback #{user_name}"
 
         # play a game while you wait for your order    
         when "4"
-            right_answer = "flate white"
+            right_answer = "flat white"
             guess = ""
             guess_count = 0
             guess_limit = 3
@@ -154,7 +159,7 @@ while opt != "5"
             while guess != right_answer and !out_of_guess
                 if guess_count < guess_limit
                     puts "Enter answer: "
-                    guess = gets.chomp()
+                    guess = STDIN.gets.chomp()
                     guess_count += 1
                 else
                     out_of_guess = true
@@ -177,7 +182,7 @@ while opt != "5"
     end
     puts
     puts "press Enter key to continue...."
-    gets
+    STDIN.gets
     system "clear"
 end
 
