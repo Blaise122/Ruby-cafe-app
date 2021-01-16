@@ -18,7 +18,6 @@ puts "Please enter your name: \n\n"
     else
         user_name = gets.chomp
     end
-  
 
 # Creates a new user object, and reaffirms to the user their input with a greeting. 
 user = User.new(user_name)
