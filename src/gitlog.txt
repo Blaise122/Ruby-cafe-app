@@ -1,3 +1,39 @@
+commit 16cb5cd6e85fa2ab29e5b3171b31f5710d8a6d02
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sat Jan 16 16:19:13 2021 +1000
+
+    made some changes to main.rb
+
+commit 214c86140f2d8468b1e39ad42ee436a10a10530f
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sat Jan 16 16:17:45 2021 +1000
+
+    made some changes to main.rb
+
+commit 648939ea54592443fcf87902f27cc3c6ca9d8b24
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Sat Jan 16 16:13:25 2021 +1000
+
+    added command line argurment
+
+commit bc447a1029ec5952e16f0988fcb6d66396140900
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Thu Jan 14 14:08:33 2021 +1000
+
+    add to readme
+
+commit b38069f1d078629760a3e47769da5a8fae3eadb4
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Thu Jan 14 13:22:00 2021 +1000
+
+    added trello images
+
+commit de019c9b14a8a9397c58b0836d4e6ee203d16965
+Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
+Date:   Thu Jan 14 11:13:26 2021 +1000
+
+    added trello images
+
 commit e48047d06f222b3ada0eb97d9cf283f9e28c23b5
 Author: Blaise122 <70517861+Blaise122@users.noreply.github.com>
 Date:   Wed Jan 13 19:46:04 2021 +1000
